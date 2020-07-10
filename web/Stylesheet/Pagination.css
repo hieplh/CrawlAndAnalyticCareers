@@ -1,0 +1,17 @@
+.pagination{
+    width: fit-content;
+    margin: auto;
+}
+.page {
+    width: 25px; height: 25px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid black;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

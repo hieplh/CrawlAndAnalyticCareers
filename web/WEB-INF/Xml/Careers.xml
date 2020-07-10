@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<career xmlns="http://abc.com/career"
+        host="https://www.timviecnhanh.com/"
+        link="https://www.timviecnhanh.com/vieclam/timkiem?tu_khoa=">
+    <params>
+        <nganhnghe>nganh_nghe%5B%5D</nganhnghe>
+        <tinhthanh>tinh_thanh%5B%5D</tinhthanh>
+    </params>
+</career>

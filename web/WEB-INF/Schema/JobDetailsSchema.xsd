@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="jobs" type="Jobs"/>
+    
+    <xs:complexType name="Jobs">
+        <xs:sequence>
+            <xs:element name="job" type="Job" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Job">
+        <xs:sequence>
+            <xs:element name="jobtitle" type="xs:token"/>
+            <xs:element name="company" type="xs:token"/>
+            <xs:element name="details" type="Details"/>
+        </xs:sequence>
+        <xs:attribute name="submission" type="xs:token"/>
+    </xs:complexType>
+    
+    <xs:complexType name="Details">
+        <xs:sequence>
+            <xs:element name="address" type="xs:token"/>
+            <xs:element name="salary" type="xs:token"/>
+            <xs:element name="experience" type="xs:token"/>
+            <xs:element name="level" type="xs:token"/>
+            <xs:element name="provinces" type="Provinces"/>
+            <xs:element name="careers" type="Careers"/>
+            <xs:element name="recruitment" type="xs:token"/>
+            <xs:element name="gender" type="xs:token"/>
+            <xs:element name="natureOfWork" type="xs:token"/>
+            <xs:element name="formOfWork" type="xs:token"/>
+            <xs:element name="try" type="xs:token"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Provinces">
+        <xs:sequence>
+            <xs:element name="province" type="xs:token" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Careers">
+        <xs:sequence>
+            <xs:element name="career" type="xs:token" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

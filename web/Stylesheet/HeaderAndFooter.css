@@ -1,0 +1,21 @@
+.header {
+    text-align: center;
+}
+.header h1 {
+    color: lightskyblue;
+}
+#header-menu li {
+    float: left;
+    list-style-type: none;
+    margin-right: 20px;
+}
+#header-menu li a {
+    text-decoration: none;
+    color: black;
+}
+#header-menu li a:active{
+    color: blue;
+}
+#header-menu li a:hover{
+    color: blue;
+}
